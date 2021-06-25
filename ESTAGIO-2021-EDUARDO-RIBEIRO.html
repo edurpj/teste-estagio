@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Estágio</title>
+</head>
+
+<body>
+  <nav class="nav"></nav>
+    <form id="contact" action="" method="POST">
+        <div class="left_form">
+            <fieldset>
+                <p>Nome completo:</p>
+                <input id="nomeCompleto" name="nomeCompleto" style="width: 190% ;" placeholder="  Nome completo" type="text" tabindex="1" required autofocus>
+            </fieldset>
+            <fieldset>
+                <p>RG:</p>
+                <input name="rg" placeholder="  00.000.000-0" type="text" tabindex="2" required>
+            </fieldset>
+            <fieldset>
+                <p>Pai:</p>
+                <input name="nomePai" style="width: 140%;" placeholder="  Nome do pai" type="text" tabindex="3" required>
+            </fieldset>
+            <fieldset>
+                <p>Escolaridade:</p>
+                <select  style="width: 45%;" class="select_escolaridade" name="select">
+                    <option value="valor1">Selecione</option>
+                    <option value="valor2">Ensino médio</option>
+                    <option value="valor3">Ensino superior incompleto</option>
+                    <option value="valor4">Ensino Superior completo</option>
+                  </select>
+            </fieldset>
+            <fieldset>
+                <p>Telefone:</p>
+                <input name="telefone" placeholder="  0000-0000" type="text" tabindex="5" required>
+            </fieldset>
+            <fieldset>
+                <p>E-mail:</p>
+                <input name="email" style="width: 180%;" placeholder="  exemplo@gmail.com" type="text" tabindex="4" required>
+            </fieldset>
+            <div class="button_flex">
+            <fieldset>
+                <button class="btn" name="cadastrar" type="submit"
+                    data-submit="...Enviando" onclick="return validar()">Cadastrar</button>
+            </fieldset>
+            <fieldset>
+                <button class="btn-right" name="limpar" type="submit" data-submit="...Limpando" onclick="resetForm()">Limpar
+                    Campos</button>
+            </fieldset>
+            </div>
+        </div>
+
+
+        <div class="right_form">
+            <fieldset>
+                <p>Data de nascimento:</p>
+                <input name="datanasc" placeholder="  __/__/___" type="number" tabindex="6" required>
+            </fieldset>
+            <fieldset>
+                <p>CPF:</p>
+                <input name="cpf" placeholder="  000.000.000-00" type="number" tabindex="7" required>
+            </fieldset>
+            <fieldset>
+                <p>Mãe:</p>
+                <input name="mae" placeholder="  Nome da Mãe" type="text" tabindex="8" required>
+            </fieldset>
+            <fieldset>
+                <p>Profissão:</p>
+                <input name="profissao" placeholder="  Profissão" type="text" tabindex="9" required>
+            </fieldset>
+            <fieldset>
+                <p>Celular:</p>
+                <input name="cel" placeholder="  (00) 0000-0000" type="number" tabindex="10" required>
+            </fieldset>
+        </div>
+    </form>
+        <script src="script.js"></script>
+</body>
+
+</html>
